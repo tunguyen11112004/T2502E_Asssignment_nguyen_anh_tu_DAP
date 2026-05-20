@@ -6,8 +6,8 @@ def get_connection():
         connection = mysql.connector.connect(
             host='localhost',
             database='news_management',
-            user='root',       # Thay đổi theo máy bạn
-            password=''        # Thay đổi theo máy bạn
+            user='root',       # Điều chỉnh theo cấu hình máy bạn
+            password=''        # Điều chỉnh theo cấu hình máy bạn
         )
         if connection.is_connected():
             return connection
